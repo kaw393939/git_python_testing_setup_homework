@@ -33,6 +33,7 @@ Understanding the broader context of these tools and methodologies is crucial. P
 
 ## Tutorial References Created by Instructor
 
+- [GIT Tutorial Guide](gitguide.md)
 - [GIT Stash Management](gitstash.md)
 
 ## Key Commands
