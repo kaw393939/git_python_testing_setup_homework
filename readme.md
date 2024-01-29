@@ -1,40 +1,77 @@
-# Homework 2 
+# Enhanced Homework 2 Instructions
 
-In this unit, you will setup a professional development environment for Python that includes the unit testing frameowrk pytest, the static code analysis tool called Pylint, and a unit test coverage tool called coverage.  You will also learn how to use python virtual environments to issolate your dependencies and how to use pip freeze to create a requirements.txt file that will lock your dependencies.  You should use this project as an opportunity to practice git branch, merge, and the stash management in the text tutorial below.
+## Overview
 
-In this homework we are going to practice some GIT commands and setup a professional Python project with a virtual environment, pytest, and pylint.  Take a look at the VScode / WSL 2 video to see how to integrate VScode with the command line, so you can use a GUI to edit text files.  T
+Welcome to Homework 2! In this unit, our goal is to establish a professional development setup for Python. This will include familiarizing yourselves with several key tools and practices that are integral to modern software development. Specifically, you'll set up:
 
-# Conceptual Readings
+- **Python Virtual Environments**: Essential for managing project-specific dependencies.
+- **Pytest**: A powerful framework for writing and running Python tests.
+- **Pylint**: A tool for analyzing your Python code for errors and enforcing a coding standard.
+- **Coverage**: A tool for measuring the coverage of your unit tests.
+- **Git**: To practice version control techniques such as branching, merging, and using stash.
 
-I want you to read the agile manifesto, 12 factor app, and the continuous integration articles as well as the case study on using automated tests at Google, so that you have some context for the professional application of the tools and ideas we are learning in this unit.  Without understanding the context of why we are learning to code like this, it will be difficult for you to apprecate the value of the skills we are learning.
+Additionally, we will delve into integrating these tools with Visual Studio Code (VSCode) and Windows Subsystem for Linux (WSL 2), enhancing your ability to manage development tasks.
 
-*  [Authomated Testing at Google](https://itrevolution.com/articles/case-study-automated-testing-google/)
-*  [This is the origins of Agile development and to understand Agile software development you need to understand and implement automated tests](https://agilemanifesto.org/principles.html)
-*  [The 12 Factor App is a big picture overview of the best practices of maintining misson critical software.  Throughout the course we will be touching on various aspects of this as we develop our knoledge and skill as software engineers](https://12factor.net/)
-*  [This is the original article that was written that explained continuous integration, which is the practice of constantly testing and deploying software, which is required to implement agile](https://martinfowler.com/articles/continuousIntegration.html)
+## Learning Objectives
 
-# Tutorial References Created by Instructor
-*  [GIT Stash](gitstash.md)
+By the end of this homework, you should be able to:
 
-# Commands
+1. Set up a Python virtual environment and manage dependencies.
+2. Use `pip freeze` to create a `requirements.txt` file.
+3. Configure and utilize pytest, pylint, and coverage in a Python project.
+4. Apply git commands for effective version control.
+5. Integrate VSCode with WSL 2 for a streamlined development process.
 
-* Adding a file to the stage: add .gitignore
-* Performing a Commit: git commit -m "added git ignore with sw* files"
-* Checking the status and whats on the commit stage: git status
-*  Git command to take changes from a remote and update a local branch:  git pull --rebase origin main
-# Python Setup Instructions
-## Ubuntu
-[Initial Python Setup Instructions for Virtual Environments on Ubuntu](https://www.arubacloud.com/tutorial/how-to-create-a-python-virtual-environment-on-ubuntu.aspx)
-# Mac
-[Install Brew Package Manager Mac - Used for Git and Python Install](https://brew.sh/)
-[Pythonn Virtual Environments on Mac with Brew package manager for Mac - You need to install Brew](https://gist.github.com/pandafulmanda/730a9355e088a9970b18275cb9eadef3)
-Once you have virtual environments installed on mac, everything will work the same as Ubuntu linux instructions that I'm providing for windows users running on Ubuntu using WSL2
+## Conceptual Readings
 
-# Python Readings
-[Pip Freeze for Beginners](https://dev.to/eskabore/pip-freeze-requirementstxt-a-beginners-guide-5e2m#:~:text=Pip%20Freeze%20is%20a%20command,virtual%20environment%20on%20another%20machine.)
-[Introduction to Pytest](https://realpython.com/pytest-python-testing/)
-[Pylint Documentation](https://pylint.pycqa.org/en/v3.0.3/index.html)
-[Pytest Documentation](https://docs.pytest.org/en/7.4.x/)
+Understanding the broader context of these tools and methodologies is crucial. Please read the following materials to gain insights into their professional application:
 
-# Setup VSCode with WSL 2, so you can easily open the project with vscode instead of using the terminal vi editor
-[Setting up WSL and VSCode](https://youtu.be/XY6lTlIW_hM)
+1. **Automated Testing at Google**: A case study on the importance of automated testing in software development. [Read here](https://itrevolution.com/articles/case-study-automated-testing-google/).
+2. **Agile Manifesto**: The foundation of Agile software development, highlighting the role of automated testing. [Read here](https://agilemanifesto.org/principles.html).
+3. **The 12 Factor App**: A guide to best practices in maintaining mission-critical software, relevant to our course. [Read here](https://12factor.net/).
+4. **Continuous Integration**: An article explaining the practice of continuous testing and deployment, essential for Agile implementation. [Read here](https://martinfowler.com/articles/continuousIntegration.html).
+
+## Tutorial References Created by Instructor
+
+- [GIT Stash Management](gitstash.md)
+
+## Key Commands
+
+Here are some fundamental Git commands you'll be using:
+
+- **Add a file to staging**: `git add .gitignore`
+- **Commit changes**: `git commit -m "added git ignore with sw* files"`
+- **Check status and staging**: `git status`
+- **Update local branch with remote changes**: `git pull --rebase origin main`
+
+## Python Setup Instructions
+
+### Ubuntu
+
+- Initial Python Setup for Virtual Environments: [Ubuntu Guide](https://www.arubacloud.com/tutorial/how-to-create-a-python-virtual-environment-on-ubuntu.aspx)
+
+### Mac
+
+1. Install Brew Package Manager: [Brew Installation](https://brew.sh/)
+2. Set Up Python Virtual Environments with Brew: [Mac Guide](https://gist.github.com/pandafulmanda/730a9355e088a9970b18275cb9eadef3)
+
+Note: Once virtual environments are set up on Mac, you can follow the same instructions as for Ubuntu.
+
+## Python Readings
+
+These readings will help you understand the tools you'll be using:
+
+- Pip Freeze for Beginners: [Read here](https://dev.to/eskabore/pip-freeze-requirementstxt-a-beginners-guide-5e2m)
+- Introduction to Pytest: [Read here](https://realpython.com/pytest-python-testing/)
+- Pylint Documentation: [Read here](https://pylint.pycqa.org/en/v3.0.3/index.html)
+- Pytest Documentation: [Read here](https://docs.pytest.org/en/7.4.x/)
+
+## Setting Up VSCode with WSL 2
+
+To efficiently open and manage your projects with VSCode instead of the terminal, follow this guide:
+
+- [Setting up WSL and VSCode](https://youtu.be/XY6lTlIW_hM)
+
+---
+
+**Reminder**: Practice and understanding are key. Don’t hesitate to reach out if you have questions or need further clarifications. Happy coding!
