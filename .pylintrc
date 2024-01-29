@@ -1,0 +1,63 @@
+[MASTER]
+# A list of file extensions of the files that will be checked for Python code
+init-hook='import sys; sys.path.append(".")'
+extension-pkg-whitelist=pydantic
+load-plugins=pylint_django
+
+[MESSAGES CONTROL]
+# Only show these errors
+enable=
+    useless-suppression,
+    deprecated-pragma,
+    use-symbolic-message-instead,
+
+# Disable the following checks (example list):
+disable=
+    C0111, # Missing docstring
+    R0903, # Too few public methods
+    R0913, # Too many arguments
+    R0914, # Too many local variables
+    R0915, # Too many statements
+    W0703, # Catching too general exception
+
+[REPORTS]
+# Set the output format. Available formats: text, parseable, colorized, json, msvs (visual studio) and html
+output-format=colorized
+
+# Include a report at the end of the log
+reports=yes
+
+# Put a full report at the end of the file
+report-full=no
+
+[DESIGN]
+# Maximum number of parents for a class (see R0901).
+max-parents=15
+
+# Maximum number of attributes for a class (see R0902).
+max-attributes=10
+
+# Minimum number of public methods for a class (see R0903).
+min-public-methods=0
+
+# Maximum number of public methods for a class (see R0904).
+max-public-methods=20
+
+[BASIC]
+# Variable names can be 1 to 31 characters long
+variable-rgx=[a-z_][a-z0-9_]{0,30}$
+
+# Function names should be lowercase, with words separated by underscores as necessary to improve readability
+function-rgx=[a-z_][a-z0-9_]{2,50}$
+
+# Argument names should be lowercase, with words separated by underscores as necessary to improve readability
+argument-rgx=[a-z_][a-z0-9_]{1,30}$
+
+# Method names should be lowercase, with words separated by underscores as necessary to improve readability
+method-rgx=[a-z_][a-z0-9_]{2,50}$
+
+# Module names should have short, all-lowercase names. The use of underscores is discouraged.
+module-rgx=[a-z_][a-z0-9_]{1,30}$
+
+# Class names
+
