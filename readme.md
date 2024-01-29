@@ -12,6 +12,8 @@ Welcome to Homework 2! In this unit, our goal is to establish a professional dev
 
 Additionally, we will delve into integrating these tools with Visual Studio Code (VSCode) and Windows Subsystem for Linux (WSL 2), enhancing your ability to manage development tasks.
 
+**Note: You should practice GIT and setting up a project more than one time, until you feel comfortable with all the commands.  Even if you us VScode, you should still use the terminal for as many GIT commands as possible.  Building a solid foundation with GIT will help you a lot in the long run**
+
 ## Learning Objectives
 
 By the end of this homework, you should be able to:
@@ -36,6 +38,10 @@ Understanding the broader context of these tools and methodologies is crucial. P
 - [GIT Tutorial Guide](gitguide.md)
 - [GIT Stash Management](gitstash.md)
 - [Git Merge Conflicts](merge_conflicts.md)
+
+### I recommend that you go through this interactive tutorial on GIT to learn as much as you can about the command line operation of GIT:
+
+#### [Excellent Tutorial on GIT](https://learngitbranching.js.org/?locale=en_US)
 
 ## Key Commands
 
