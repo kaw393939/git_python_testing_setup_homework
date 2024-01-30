@@ -36,7 +36,6 @@ Understanding the broader context of these tools and methodologies is crucial. P
 ## Tutorial References Created by Instructor
 
 - [GIT Tutorial Guide](gitguide.md)
-- [GIT Stash Management](gitstash.md)
 - [Git Merge Conflicts](merge_conflicts.md)
 
 ### I recommend that you go through this interactive tutorial on GIT to learn as much as you can about the command line operation of GIT:
