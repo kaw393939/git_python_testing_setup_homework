@@ -2,7 +2,67 @@
 
 ## Overview
 
-Welcome to Homework 2! In this unit, our goal is to establish a professional development setup for Python. This will include familiarizing yourselves with several key tools and practices that are integral to modern software development. Specifically, you'll set up:
+Welcome to Homework 2! In this unit, our goal is to establish a professional development setup for Python. This will include familiarizing yourselves with several key tools and practices that are integral to modern software development. All you need to do to complete this assignment is setup a new project that works just like mine in the video.  You need to be able to run pytest, pylint, and coverage.  You also need to read all the articles in the required section.
+
+### [Instructor Unit Video](https://youtu.be/HElKd45vVjk)
+
+You need to do the following for this assignment:
+
+1.  Install python using the Mac or Ubuntu instructions below.  You will only do this step once for the course on your commputer.   Mac needs Brew package manager to install Python and Ubuntu needs to just run the command:
+
+```bash
+sudo apt update -y
+sudo apt install python3-pip
+pip3 --version 
+```
+
+2. Install python virtual environment, so you can manage the virtual environment to issolate your dependences from the global version of python.  You need to do this once for your computer, this is a global python package.
+```bash
+pip3 install virtualenv
+```
+
+3. Make a project directory, setup the virtual environment in the directory and activate it.  For more information see [here](https://www.geeksforgeeks.org/python-virtual-environment/).  You need to do this for each new python project.
+
+```bash
+mkdir myproject
+cd myproject
+virtualenv venv <- Makes a virtual environment in the venv directory (you can make this any directory but you will have to remember it to activate it correctlty)
+source ./venv/bin/activate <- you should see (venv) in the terminal command line to indicate that the venv environment of your project is activated
+```
+4.  Once the virtual environment is a active then install the python dependencies using pip:
+```bash
+pip3 install pytest pytest-pylint pytest-cov
+
+```
+
+5. Once you have the libraries installed you need to freeze the requiremnts and create your requirments.txt file.  You need to do this so that the versions of the libaries / dependencies you use are saved, so that your project can be installed somewhere else.
+
+```bash
+pip3 freeze > requirements.txt
+
+```
+
+**Note** When someone copies / clones your repository they will install the specfic library / dependency requirements for your  project using the command: 
+
+```bash 
+pip3 install -r requirments.txt
+```
+
+6.  Once you have this done, you will need to create the "tests" and "calculator" folders and add the __init__.py file to each folder.  You need a .gitignore with the same contents as mine, you need the .pylintrc file, and the pytest.ini file.  You will need to put the same code that I have in those files.
+
+7.  Once you have the files made make sure you have the code that I have in my calculator folder's __init__.py file in yours and add the code for your test to the test_calculator.py file.  Essentially, you should have the same files as what I have in this repository.
+
+8.  Run the tests:
+
+```bash
+pytest <-runs the tests without pylint or coverage
+pytest --pylint <- Runs tests with pylint static code analysis
+pytest --pylint --cov <-Runs tests, pylint, and coverage to check if you have all your code tested.
+
+```
+9.  Once you have a new project setup and everything working, just submit a link to your repository to Canvas.
+
+Specifically, you'll set up:
 
 - **Python Virtual Environments**: Essential for managing project-specific dependencies.
 - **Pytest**: A powerful framework for writing and running Python tests.
@@ -24,7 +84,7 @@ By the end of this homework, you should be able to:
 4. Apply git commands for effective version control.
 5. Integrate VSCode with WSL 2 for a streamlined development process.
 
-## Conceptual Readings
+## Conceptual Readings Required
 
 Understanding the broader context of these tools and methodologies is crucial. Please read the following materials to gain insights into their professional application:
 
@@ -55,7 +115,8 @@ Here are some fundamental Git commands you'll be using:
 
 ### Ubuntu
 
-- Initial Python Setup for Virtual Environments: [Ubuntu Guide](https://www.arubacloud.com/tutorial/how-to-create-a-python-virtual-environment-on-ubuntu.aspx)
+- Initial Python Setup: [Ubuntu Guide](https://www.redswitches.com/blog/install-python-pip-on-ubuntu/)
+- Install the Python virtual environment manager [here](https://www.geeksforgeeks.org/python-virtual-environment/)
 
 ### Mac
 

@@ -6,19 +6,8 @@ load-plugins=pylint_django
 
 [MESSAGES CONTROL]
 # Only show these errors
-enable=
-    useless-suppression,
-    deprecated-pragma,
-    use-symbolic-message-instead,
-
 # Disable the following checks (example list):
 disable=
-    C0111, # Missing docstring
-    R0903, # Too few public methods
-    R0913, # Too many arguments
-    R0914, # Too many local variables
-    R0915, # Too many statements
-    W0703, # Catching too general exception
 
 [REPORTS]
 # Set the output format. Available formats: text, parseable, colorized, json, msvs (visual studio) and html
