@@ -4,6 +4,8 @@
 
 Welcome to Homework 2! In this unit, our goal is to establish a professional development setup for Python. This will include familiarizing yourselves with several key tools and practices that are integral to modern software development. All you need to do to complete this assignment is setup a new project that works just like mine in the video.  You need to be able to run pytest, pylint, and coverage.  You also need to read all the articles in the required section.
 
+
+
 ### [Instructor Unit Video](https://youtu.be/HElKd45vVjk)
 
 You need to do the following for this assignment:
@@ -20,10 +22,20 @@ pip3 --version
 ```bash
 pip3 install virtualenv
 ```
+**note** You should try the following to test your install with my project, after you have installed python and the virtual environment manager:
+```bash
+git clone git@github.com:kaw393939/git_python_testing_setup_homework.git
+cd git_python_testing_setup_homework
+source venv/bin/activate
+pip3 install -r requirements.txt
+pytest --pylint --cov
+```
 
-3. Make a project directory, setup the virtual environment in the directory and activate it.  For more information see [here](https://www.geeksforgeeks.org/python-virtual-environment/).  You need to do this for each new python project.
+3. Now Make a project directory not inside my own project if you cloned mine. **DO NOT CREATE A NEW REPO INSIDE OF THE ONE YOU CLONE FROM ME OR YOU WILL HAVE PROBLEMS**, setup the virtual environment in the directory that you make for your projectand activate it.  For more information see [here](https://www.geeksforgeeks.org/python-virtual-environment/).  You need to do this for each new python project.
 
 ```bash
+cd .. <-- goes up a directory to get out of the project  you cloned to test your install of python.  Make sure you do a pwd to see where your going to make your project from scratch.
+
 mkdir myproject
 cd myproject
 virtualenv venv <- Makes a virtual environment in the venv directory (you can make this any directory but you will have to remember it to activate it correctlty)
