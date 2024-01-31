@@ -7,7 +7,38 @@ Welcome to Homework 2! In this unit, our goal is to establish a professional dev
 
 
 ### [Instructor Unit Video](https://youtu.be/HElKd45vVjk)
+Specifically, you'll set up:
 
+- **Python Virtual Environments**: Essential for managing project-specific dependencies.
+- **Pytest**: A powerful framework for writing and running Python tests.
+- **Pylint**: A tool for analyzing your Python code for errors and enforcing a coding standard.
+- **Coverage**: A tool for measuring the coverage of your unit tests.
+- **Git**: To practice version control techniques such as branching, merging, and using stash.
+
+Additionally, we will delve into integrating these tools with Visual Studio Code (VSCode) and Windows Subsystem for Linux (WSL 2), enhancing your ability to manage development tasks.
+
+**Note: You should practice GIT and setting up a project more than one time, until you feel comfortable with all the commands.  Even if you us VScode, you should still use the terminal for as many GIT commands as possible.  Building a solid foundation with GIT will help you a lot in the long run**
+
+## Learning Objectives
+
+By the end of this homework, you should be able to:
+
+1. Set up a Python virtual environment and manage dependencies.
+2. Use `pip freeze` to create a `requirements.txt` file.
+3. Configure and utilize pytest, pylint, and coverage in a Python project.
+4. Apply git commands for effective version control.
+5. Integrate VSCode with WSL 2 for a streamlined development process.
+
+## Conceptual Readings Required
+
+Understanding the broader context of these tools and methodologies is crucial. Please read the following materials to gain insights into their professional application:
+
+1. **Automated Testing at Google**: A case study on the importance of automated testing in software development. [Read here](https://itrevolution.com/articles/case-study-automated-testing-google/).
+2. **Agile Manifesto**: The foundation of Agile software development, highlighting the role of automated testing. [Read here](https://agilemanifesto.org/principles.html).
+3. **The 12 Factor App**: A guide to best practices in maintaining mission-critical software, relevant to our course. [Read here](https://12factor.net/).
+4. **Continuous Integration**: An article explaining the practice of continuous testing and deployment, essential for Agile implementation. [Read here](https://martinfowler.com/articles/continuousIntegration.html).
+
+## Instructions 
 You need to do the following for this assignment:
 
 1.  Install python using the Mac or Ubuntu instructions below.  You will only do this step once for the course on your commputer.   Mac needs Brew package manager to install Python and Ubuntu needs to just run the command:
@@ -73,37 +104,6 @@ pytest --pylint --cov <-Runs tests, pylint, and coverage to check if you have al
 
 ```
 9.  Once you have a new project setup and everything working, just submit a link to your repository to Canvas.
-
-Specifically, you'll set up:
-
-- **Python Virtual Environments**: Essential for managing project-specific dependencies.
-- **Pytest**: A powerful framework for writing and running Python tests.
-- **Pylint**: A tool for analyzing your Python code for errors and enforcing a coding standard.
-- **Coverage**: A tool for measuring the coverage of your unit tests.
-- **Git**: To practice version control techniques such as branching, merging, and using stash.
-
-Additionally, we will delve into integrating these tools with Visual Studio Code (VSCode) and Windows Subsystem for Linux (WSL 2), enhancing your ability to manage development tasks.
-
-**Note: You should practice GIT and setting up a project more than one time, until you feel comfortable with all the commands.  Even if you us VScode, you should still use the terminal for as many GIT commands as possible.  Building a solid foundation with GIT will help you a lot in the long run**
-
-## Learning Objectives
-
-By the end of this homework, you should be able to:
-
-1. Set up a Python virtual environment and manage dependencies.
-2. Use `pip freeze` to create a `requirements.txt` file.
-3. Configure and utilize pytest, pylint, and coverage in a Python project.
-4. Apply git commands for effective version control.
-5. Integrate VSCode with WSL 2 for a streamlined development process.
-
-## Conceptual Readings Required
-
-Understanding the broader context of these tools and methodologies is crucial. Please read the following materials to gain insights into their professional application:
-
-1. **Automated Testing at Google**: A case study on the importance of automated testing in software development. [Read here](https://itrevolution.com/articles/case-study-automated-testing-google/).
-2. **Agile Manifesto**: The foundation of Agile software development, highlighting the role of automated testing. [Read here](https://agilemanifesto.org/principles.html).
-3. **The 12 Factor App**: A guide to best practices in maintaining mission-critical software, relevant to our course. [Read here](https://12factor.net/).
-4. **Continuous Integration**: An article explaining the practice of continuous testing and deployment, essential for Agile implementation. [Read here](https://martinfowler.com/articles/continuousIntegration.html).
 
 ## Tutorial References Created by Instructor
 
