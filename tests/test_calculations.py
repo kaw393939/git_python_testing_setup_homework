@@ -7,7 +7,6 @@ from calculator.calculation import Calculation
 from calculator.calculations import Calculations
 from calculator.operations import add, subtract
 
-# Removed redefined add function to use the one from calculator.operations
 # If you need custom behavior, rename this function and adjust its usage
 
 @pytest.fixture
