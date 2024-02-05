@@ -10,7 +10,7 @@ class Calculation:
         # Call the stored operation with a and b
         return self.operation(self.a, self.b)
 
-class calculator:
+class Calculator:
     @staticmethod
     def add(a,b):
         calculation = Calculation(a, b, add)  # Pass the add function from calculator.operations
